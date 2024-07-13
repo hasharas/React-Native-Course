@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import {Link} from 'expo-router';
 
 export default function app() {
   return (
@@ -7,7 +8,8 @@ export default function app() {
       
         <Text>Hello World </Text>
         <StatusBar style="auto" />
-        
+        <Link href="/profile" style={{color:'blue'}} >Go to Profile </Link>
+        <Link href="/_layout" style={{color:'blue'}} >Go to layout </Link>
       </View>
     
   );
